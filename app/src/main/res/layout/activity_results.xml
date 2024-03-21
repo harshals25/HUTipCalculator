@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_TotalBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="26dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="Total bill will be shown here"
+            />
+
+        <TextView
+            android:id="@+id/tv_BillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="Only bill will be shown here"
+            />
+
+        <TextView
+            android:id="@+id/tv_TotalTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="Total tip will be shown here"
+            />
+
+        <TextView
+            android:id="@+id/tv_SplitBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Split only the bill between"
+            />
+
+        <EditText
+            android:id="@+id/et_billSplit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:hint="Enter value between 1 to 4"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/tv_SplitBillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="26dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="Split bill will be shown here"
+            />
+
+        <TextView
+            android:id="@+id/tv_SplitTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Split only the tip between"
+            />
+
+        <EditText
+            android:id="@+id/et_tipSplit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:hint="Enter value between 1 to 4"
+            android:inputType="number"
+            />
+        <TextView
+            android:id="@+id/tv_SplitTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="26dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="Split tip will be shown here"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_SplitTotalBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Split the total bill between"
+            />
+
+        <EditText
+            android:id="@+id/et_totalSplit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:hint="Enter value between 1 to 4"
+            android:inputType="number"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_SplitTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="26dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="Split total will be shown here"
+            />
+
+        <TextView
+            android:id="@+id/tv_EditTipBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/mid_gray"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Edit Tip/Bill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_EnterNew"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="2dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Enter new Data"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal">-->
+
+<!--<Button-->
+<!--    android:id="@+id/btn_OneBill"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_weight="1"-->
+<!--    android:layout_marginStart="5dp"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="1"-->
+<!--    />-->
+
+<!--<Button-->
+<!--    android:id="@+id/btn_TwoBill"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_weight="1"-->
+<!--    android:layout_marginStart="5dp"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="2"-->
+<!--    />-->
+
+<!--<Button-->
+<!--    android:id="@+id/btn_ThreeBill"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_weight="1"-->
+<!--    android:layout_marginStart="5dp"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="3"-->
+<!--    />-->
+
+<!--<Button-->
+<!--    android:id="@+id/btn_FourBill"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_weight="1"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginStart="5dp"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    android:text="4"-->
+<!--    />-->
+<!--</LinearLayout>-->

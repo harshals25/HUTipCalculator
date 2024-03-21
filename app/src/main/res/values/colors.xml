@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#253B73</color>
+
+    <color name="lightgray">#dddddd</color>
+    <color name="answergray">#444444</color>
+    <color name="answergraytwo">#ededed</color>
+    <color name="normalgray">#999999</color>
+    <color name="scroll_overlay">#33FFFFFF</color>
+    <!--<color name="iblue">#28ace2</color> -->
+    <color name="iblue">#717F85</color> <!-- updating this to "light blue" from 2/26/18 email -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_gray">#363636</color>
+    <color name="mid_gray">#757682</color>
+    <color name="fadedBlack">#59000000</color>
+    <color name="tag_green">#18B999</color>
+    <color name="buttonBlue">#253B73</color>
+</resources>
